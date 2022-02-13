@@ -8,4 +8,6 @@ public interface HuaweiComputerFlush {
     void setScreenSize();
 
     void setPrice();
+
+    void setSupplier(String supplier);
 }

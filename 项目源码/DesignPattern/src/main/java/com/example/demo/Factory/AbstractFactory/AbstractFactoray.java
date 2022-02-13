@@ -6,6 +6,7 @@ public interface AbstractFactoray {
 
     Object createPhone(Class clazz);
 
-    Object createComputer(Class clazz);
+    //创建电脑的时候  需要外界临时提供  材料供应商的名字
+    Object createComputer(Class clazz,String supplier);
 
 }

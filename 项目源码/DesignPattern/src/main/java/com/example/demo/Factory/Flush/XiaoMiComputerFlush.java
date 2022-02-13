@@ -8,4 +8,6 @@ public interface XiaoMiComputerFlush {
     void setAppearance();
 
     void setPrice();
+
+    void setSupplier(String supplier);
 }

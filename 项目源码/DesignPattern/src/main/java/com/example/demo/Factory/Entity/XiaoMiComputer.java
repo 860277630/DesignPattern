@@ -11,6 +11,8 @@ public class XiaoMiComputer implements XiaoMiComputerFlush {
 
     private String price;
 
+    private String supplier;
+
 
     @Override
     public void setValue() {
@@ -31,11 +33,18 @@ public class XiaoMiComputer implements XiaoMiComputerFlush {
     }
 
     @Override
+    public void setSupplier(String supplier) {
+        System.out.println("外界提供的供应商为:" + supplier);
+        this.supplier = supplier;
+    }
+
+    @Override
     public String toString() {
         return "XiaoMiComputer{" +
                 "value='" + value + '\'' +
                 ", appearance='" + appearance + '\'' +
                 ", price='" + price + '\'' +
+                ", supplier='" + supplier + '\'' +
                 '}';
     }
 }

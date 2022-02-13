@@ -36,9 +36,9 @@ public class FactoryTest {
         HuaWeiAbstractFactory huaWeiAbstractFactory = new HuaWeiAbstractFactory();
         XiaoMiAbstractFactory xiaoMiAbstractFactory = new XiaoMiAbstractFactory();
         HuaWeiPhoneFlush huaWeiPhone = (HuaWeiPhoneFlush)huaWeiAbstractFactory.createPhone(HuaWeiPhoneA.class);
-        HuaweiComputerFlush huaWeiComputer = (HuaweiComputerFlush) huaWeiAbstractFactory.createComputer(HuaWeiComputer.class);
+        HuaweiComputerFlush huaWeiComputer = (HuaweiComputerFlush) huaWeiAbstractFactory.createComputer(HuaWeiComputer.class,"因特尔");
         XiaoMiPhoneFlush xiaoMiPhone = (XiaoMiPhoneFlush)xiaoMiAbstractFactory.createPhone(XiaoMiPhoneA.class);
-        XiaoMiComputerFlush xiaoMiComputer = (XiaoMiComputerFlush) xiaoMiAbstractFactory.createComputer(XiaoMiComputer.class);
+        XiaoMiComputerFlush xiaoMiComputer = (XiaoMiComputerFlush) xiaoMiAbstractFactory.createComputer(XiaoMiComputer.class,"AMD");
         System.out.println(huaWeiPhone.toString());
         System.out.println(huaWeiComputer.toString());
         System.out.println(xiaoMiPhone.toString());

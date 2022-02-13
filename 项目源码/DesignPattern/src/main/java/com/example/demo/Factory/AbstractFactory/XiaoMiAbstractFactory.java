@@ -22,13 +22,14 @@ public class XiaoMiAbstractFactory implements AbstractFactoray {
     }
 
     @Override
-    public Object createComputer(Class clazz) {
+    public Object createComputer(Class clazz,String supplier) {
         try {
             if(null!=clazz){
                 XiaoMiComputerFlush h = (XiaoMiComputerFlush) clazz.newInstance();
                 h.setAppearance();
                 h.setPrice();
                 h.setValue();
+                h.setSupplier(supplier);
                 return h;
             }
         }catch (Exception e){

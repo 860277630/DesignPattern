@@ -9,6 +9,8 @@ public class HuaWeiComputer implements HuaweiComputerFlush {
 
     private String price;
 
+    private String supplier;
+
     @Override
     public void setPerson() {
         System.out.println("华为电脑针对打游戏人群的电脑");
@@ -28,11 +30,18 @@ public class HuaWeiComputer implements HuaweiComputerFlush {
     }
 
     @Override
+    public void setSupplier(String supplier) {
+        System.out.println("外界提供的供应商为:" + supplier);
+        this.supplier = supplier;
+    }
+
+    @Override
     public String toString() {
         return "HuaWeiComputer{" +
                 "person='" + person + '\'' +
                 ", screenSize='" + screenSize + '\'' +
                 ", price='" + price + '\'' +
+                ", supplier='" + supplier + '\'' +
                 '}';
     }
 }

@@ -21,13 +21,14 @@ public class HuaWeiAbstractFactory implements AbstractFactoray {
     }
 
     @Override
-    public Object createComputer(Class clazz) {
+    public Object createComputer(Class clazz,String supplier) {
         try {
             if(null!=clazz){
                 HuaweiComputerFlush h = (HuaweiComputerFlush) clazz.newInstance();
                 h.setPerson();
                 h.setPrice();
                 h.setScreenSize();
+                h.setSupplier(supplier);
                 return h;
             }
         }catch (Exception e){
