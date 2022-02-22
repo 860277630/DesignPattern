@@ -1,5 +1,8 @@
 package com.example.demo.single.Hungry;
 
+
+import java.lang.reflect.Constructor;
+
 public class Hungry1 {
     public static void main(String[] args) {
         //测试
@@ -8,6 +11,8 @@ public class Hungry1 {
         System.out.println(instance1 == instance2);
         System.out.println(instance1.hashCode());
         System.out.println(instance2.hashCode());
+
+
     }
 }
 
