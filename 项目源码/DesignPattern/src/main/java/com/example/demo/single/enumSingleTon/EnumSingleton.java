@@ -9,9 +9,11 @@ import java.lang.reflect.Constructor;
 public class EnumSingleton {
 
     public static void main(String[] args) {
+        //普通的创建方式
         EmumForSingleton e1 = EmumForSingleton.INSTANCE;
         EmumForSingleton e2 = EmumForSingleton.INSTANCE;
         System.out.println(e1.getU() == e2.getU());
+        //value of 的创建方式
         EmumForSingleton instance = EmumForSingleton.valueOf("INSTANCE");
         System.out.println(instance.toString());
         EmumForSingleton instance2 = EmumForSingleton.valueOf("INSTANCE2");
@@ -48,6 +50,7 @@ public class EnumSingleton {
 
 }
 enum EmumForSingleton{
+
     INSTANCE;
     private User u = new User("peter",15,"man");
     public User getU() {
