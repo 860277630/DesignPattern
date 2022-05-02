@@ -1,6 +1,7 @@
 package com.example.demo.prototype;
 
-import com.gupaoedu.vip.pattern.prototype.deep.ConcretePrototype;
+
+import com.example.demo.prototype.deep.ConcretePrototype;
 
 import java.util.ArrayList;
 import java.util.List;
